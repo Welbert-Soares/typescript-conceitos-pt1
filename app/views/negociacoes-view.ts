@@ -33,4 +33,9 @@ export class NegociacoesView extends View<Negociacoes> {
         </table>
         `;
     }
+
+    public formatar(data: Date): string {
+        return  new Intl.DateTimeFormat()
+            .format(data);
+    }
 }
